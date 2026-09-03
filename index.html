@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vitta Auto Seguros | Proteção automotiva completa</title>
+<meta name="description" content="Seguro automotivo completo, assistência 24 horas e cotação rápida pelo WhatsApp. Mais de 10.000 veículos protegidos em todo o Brasil.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#topo" class="logo">
+      <span class="logo__main">VITTA AUTO</span>
+      <span class="logo__sub">Seguros</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#topo" class="nav__link">Início</a></li>
+        <li><a href="#coberturas" class="nav__link">Seguros</a></li>
+        <li><a href="#diferenciais" class="nav__link">Benefícios</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre nós</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#cotacao" class="btn btn--primary btn--sm">Calcule sua cotação</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li><a href="#topo" class="mobile-menu__link">Início</a></li>
+      <li><a href="#coberturas" class="mobile-menu__link">Seguros</a></li>
+      <li><a href="#diferenciais" class="mobile-menu__link">Benefícios</a></li>
+      <li><a href="#sobre" class="mobile-menu__link">Sobre nós</a></li>
+      <li><a href="#depoimentos" class="mobile-menu__link">Depoimentos</a></li>
+      <li><a href="#faq" class="mobile-menu__link">FAQ</a></li>
+      <li><a href="#contato" class="mobile-menu__link">Contato</a></li>
+    </ul>
+    <a href="#cotacao" class="btn btn--primary btn--block">Calcule sua cotação</a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__bg" role="img" aria-label="Carro moderno em estrada urbana ao entardecer"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow eyebrow--light">Seguro automotivo</p>
+        <h1 class="hero__title">Seu carro protegido.<br>Sua tranquilidade garantida.</h1>
+        <p class="hero__subtitle">Seguro automotivo completo, assistência 24 horas e proteção que acompanha você em todos os caminhos.</p>
+
+        <div class="hero__cta-group">
+          <a href="#cotacao" class="btn btn--primary btn--lg">Calcular cotação</a>
+          <a href="#coberturas" class="btn btn--ghost btn--lg">Conhecer coberturas</a>
+        </div>
+
+        <ul class="hero__trust">
+          <li><span class="check">✓</span> Assistência 24 horas</li>
+          <li><span class="check">✓</span> Cobertura nacional</li>
+          <li><span class="check">✓</span> Atendimento especializado</li>
+        </ul>
+      </div>
+
+      <div class="hero__stat reveal">
+        <span class="hero__stat-number" data-count="10000" data-suffix="+">0</span>
+        <span class="hero__stat-label">veículos protegidos</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===================== COTAÇÃO ===================== -->
+  <section class="quote" id="cotacao">
+    <div class="container quote__inner">
+      <div class="quote__intro reveal">
+        <p class="eyebrow">Cotação rápida</p>
+        <h2 class="section-title">Proteja seu carro em poucos minutos</h2>
+        <p class="section-lead">Preencha os dados abaixo e receba uma cotação personalizada diretamente no WhatsApp, sem burocracia e sem compromisso.</p>
+
+        <ul class="quote__points">
+          <li>Resposta em minutos, direto com um especialista</li>
+          <li>Planos sob medida para o seu perfil</li>
+          <li>Sem letras miúdas: você entende tudo antes de contratar</li>
+        </ul>
+      </div>
+
+      <form class="quote__form reveal" id="quote-form" novalidate>
+        <div class="form-row">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+        </div>
+
+        <div class="form-row">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="form-row form-row--split">
+          <div>
+            <label for="modelo">Modelo do veículo</label>
+            <input type="text" id="modelo" name="modelo" placeholder="Ex: Honda Civic" required>
+          </div>
+          <div>
+            <label for="ano">Ano</label>
+            <input type="text" id="ano" name="ano" placeholder="Ex: 2022" inputmode="numeric" required>
+          </div>
+        </div>
+
+        <div class="form-row form-row--split">
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+          </div>
+          <div>
+            <label for="tipo-seguro">Tipo de seguro</label>
+            <select id="tipo-seguro" name="tipoSeguro" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="Compreensivo (completo)">Compreensivo (completo)</option>
+              <option value="Contra roubo e furto">Contra roubo e furto</option>
+              <option value="Terceiros">Apenas terceiros</option>
+              <option value="Ainda não sei">Ainda não sei / quero orientação</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Quero minha cotação</button>
+        <p class="quote__disclaimer">Ao enviar, você será direcionado ao WhatsApp da Vitta Auto com seus dados preenchidos.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== COBERTURAS ===================== -->
+  <section class="coverage" id="coberturas">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Coberturas</p>
+        <h2 class="section-title">Uma proteção completa para o seu carro</h2>
+        <p class="section-lead">Combine as coberturas que fazem sentido para a sua rotina e monte um plano do tamanho da sua necessidade.</p>
+      </div>
+
+      <div class="coverage__grid">
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">🚗</div>
+          <h3>Colisão</h3>
+          <p>Proteção contra acidentes e colisões, com reparo em oficinas credenciadas em todo o país.</p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">🔒</div>
+          <h3>Roubo e furto</h3>
+          <p>Seu veículo protegido contra roubo e furto, com indenização justa e processo transparente.</p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">🌧️</div>
+          <h3>Fenômenos naturais</h3>
+          <p>Cobertura para enchentes, alagamentos, granizo e outros eventos climáticos imprevisíveis.</p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">🔥</div>
+          <h3>Incêndio</h3>
+          <p>Cobertura completa para danos causados por incêndio, de origem acidental ou elétrica.</p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">👨‍🔧</div>
+          <h3>Assistência 24h</h3>
+          <p>Guincho, chaveiro, troca de pneu e suporte mecânico a qualquer hora, em qualquer lugar.</p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-card__icon">🚘</div>
+          <h3>Carro reserva</h3>
+          <p>Um veículo à sua disposição durante o período de reparo, para sua rotina não parar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="advantages" id="diferenciais">
+    <div class="container">
+      <div class="section-head section-head--light reveal">
+        <p class="eyebrow eyebrow--light">Diferenciais</p>
+        <h2 class="section-title section-title--light">Por que escolher a Vitta?</h2>
+      </div>
+
+      <div class="advantages__grid">
+        <div class="advantage reveal">
+          <div class="advantage__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Atendimento rápido</h3>
+          <p>Respostas objetivas, sem espera e sem enrolação, do primeiro contato à contratação.</p>
+        </div>
+
+        <div class="advantage reveal">
+          <div class="advantage__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Assistência 24 horas</h3>
+          <p>Uma equipe pronta para te atender em qualquer horário, todos os dias do ano.</p>
+        </div>
+
+        <div class="advantage reveal">
+          <div class="advantage__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="19" cy="12" r="1.4" fill="currentColor"/></svg>
+          </div>
+          <h3>Planos personalizados</h3>
+          <p>Cada perfil de motorista é único — por isso montamos planos sob medida, sem pacotes engessados.</p>
+        </div>
+
+        <div class="advantage reveal">
+          <div class="advantage__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 4 7v5c0 4.6 3.2 8.3 8 9 4.8-.7 8-4.4 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Consultoria especializada</h3>
+          <p>Você conversa com especialistas que explicam cada cláusula antes de você decidir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section class="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="section-title">Três passos até a estrada com mais segurança</h2>
+      </div>
+
+      <div class="process__route" id="process-route">
+        <svg class="process__line" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+          <path id="route-path" d="M20,60 C 300,60 300,60 500,60 C 700,60 700,60 980,60" />
+        </svg>
+
+        <div class="process__steps">
+          <div class="process-step reveal">
+            <span class="process-step__number">01</span>
+            <h3>Informe seus dados</h3>
+            <p>Conte um pouco sobre você e seu veículo no formulário de cotação.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="process-step__number">02</span>
+            <h3>Receba sua cotação</h3>
+            <p>Um especialista monta um plano sob medida e te envia direto no WhatsApp.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="process-step__number">03</span>
+            <h3>Proteja seu veículo</h3>
+            <p>Aprovou? Fechamos a contratação e você já sai protegido no mesmo dia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about" id="sobre">
+    <div class="container about__inner">
+      <div class="about__image reveal" role="img" aria-label="Consultora da Vitta Auto atendendo um cliente"></div>
+
+      <div class="about__content reveal">
+        <p class="eyebrow">Sobre a Vitta Auto</p>
+        <h2 class="section-title">Seguro não é só proteger o carro.<br>É proteger sua rotina.</h2>
+        <p>A Vitta Auto nasceu em 2018 com uma proposta simples: tirar a burocracia do seguro automotivo e colocar o motorista no centro de tudo. Começamos como uma corretora pequena, atendendo bairro por bairro, e crescemos porque entregamos o que prometemos — atendimento humano, prazos cumpridos e coberturas que fazem sentido de verdade.</p>
+        <p>Hoje protegemos milhares de veículos em todo o Brasil, mas mantemos o mesmo princípio do primeiro dia: cada apólice representa uma rotina, uma família, um trajeto que precisa continuar seguro.</p>
+
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-number" data-count="10000" data-suffix="+">0</span>
+            <span class="about__stat-label">Veículos protegidos</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number" data-count="8" data-suffix=" anos">0</span>
+            <span class="about__stat-label">De experiência</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number" data-decimal="4.9" data-suffix="/5">0</span>
+            <span class="about__stat-label">Avaliação dos clientes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Depoimentos</p>
+        <h2 class="section-title">Quem confia, recomenda</h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p>"Troquei de seguradora depois de um sinistro mal resolvido em outro lugar. Na Vitta, o guincho chegou em 20 minutos e o reparo ficou pronto antes do prazo combinado."</p>
+          <div class="testimonial__author">
+            <span class="testimonial__name">Renata Souza</span>
+            <span class="testimonial__city">Belo Horizonte, MG</span>
+          </div>
+        </article>
+
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p>"Fechei a cotação pelo WhatsApp em uma tarde. O consultor explicou a franquia e as coberturas sem enrolar, o que me deu bastante segurança pra decidir."</p>
+          <div class="testimonial__author">
+            <span class="testimonial__name">Carlos Eduardo Lima</span>
+            <span class="testimonial__city">Maceió, AL</span>
+          </div>
+        </article>
+
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="4 de 5 estrelas">★★★★☆</div>
+          <p>"Já usei a assistência 24h duas vezes, uma delas de madrugada. Atendimento rápido nas duas ocasiões. Só acho que o app poderia ser mais simples."</p>
+          <div class="testimonial__author">
+            <span class="testimonial__name">Fernanda Alves</span>
+            <span class="testimonial__city">Curitiba, PR</span>
+          </div>
+        </article>
+
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p>"Pesquisei em três seguradoras antes de decidir. A Vitta não foi a mais barata, mas foi a única que me explicou tudo com clareza. Valeu a pena."</p>
+          <div class="testimonial__author">
+            <span class="testimonial__name">João Pedro Martins</span>
+            <span class="testimonial__city">Porto Alegre, RS</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner reveal">
+      <h2>Seu carro merece estar protegido.</h2>
+      <p>Faça uma cotação sem compromisso e descubra a proteção ideal para o seu veículo.</p>
+      <div class="cta-banner__actions">
+        <a href="#cotacao" class="btn btn--primary btn--lg">Fazer minha cotação</a>
+        <a href="#" class="btn btn--outline-light btn--lg" id="talk-to-consultant">Falar com um consultor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="container faq__inner">
+      <div class="section-head reveal">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2 class="section-title">Perguntas frequentes</h2>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>Quanto custa um seguro automotivo?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>O valor depende de fatores como modelo e ano do veículo, região, perfil de uso e coberturas escolhidas. Por isso trabalhamos com cotação personalizada: em minutos você recebe um valor real para o seu caso, sem estimativas genéricas.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>O seguro cobre roubo e furto?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>Sim. A cobertura contra roubo e furto está disponível em todos os nossos planos compreensivos e também pode ser contratada de forma isolada, conforme a sua necessidade.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>Existe assistência 24 horas?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>Sim, todos os planos Vitta Auto incluem assistência 24 horas: guincho, chaveiro, troca de pneu, pane seca e suporte mecânico básico, em qualquer dia e horário.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>Posso contratar pelo WhatsApp?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>Sim. Depois da cotação, todo o processo de contratação pode ser conduzido pelo WhatsApp com um de nossos consultores, incluindo o envio de documentos.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>O seguro cobre terceiros?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>Sim, oferecemos cobertura de responsabilidade civil facultativa (RCF), que cobre danos materiais e corporais causados a terceiros em caso de acidente.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-item__trigger" aria-expanded="false">
+            <span>Como funciona a franquia?</span>
+            <span class="accordion-item__icon"></span>
+          </button>
+          <div class="accordion-item__panel">
+            <p>A franquia é o valor pago pelo segurado em caso de sinistro com culpa apurada. Ela varia conforme o plano escolhido e é sempre explicada com clareza antes da contratação, sem letras miúdas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contato</p>
+        <h2 class="section-title">Fale com um consultor</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">WhatsApp</span>
+              <a href="#" id="contact-whatsapp" class="contact__value">(82) 99999-0000</a>
+            </li>
+            <li>
+              <span class="contact__label">Telefone</span>
+              <a href="tel:+558230000000" class="contact__value">(82) 3000-0000</a>
+            </li>
+            <li>
+              <span class="contact__label">E-mail</span>
+              <a href="mailto:contato@vittaauto.com.br" class="contact__value">contato@vittaauto.com.br</a>
+            </li>
+            <li>
+              <span class="contact__label">Endereço</span>
+              <span class="contact__value">Av. Fernandes Lima, 1200 — Farol, Maceió/AL</span>
+            </li>
+            <li>
+              <span class="contact__label">Horário de atendimento</span>
+              <span class="contact__value">Seg. a sex., 8h às 19h · Sáb., 9h às 13h</span>
+            </li>
+          </ul>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Fernandes+Lima+1200+Farol+Maceio+AL" target="_blank" rel="noopener" class="btn btn--outline">Abrir no Google Maps</a>
+        </div>
+
+        <div class="contact__map reveal" role="img" aria-label="Mapa ilustrativo da localização da Vitta Auto Seguros">
+          <div class="contact__map-pin"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#topo" class="logo logo--footer">
+        <span class="logo__main">VITTA AUTO</span>
+        <span class="logo__sub">Seguros</span>
+      </a>
+      <p>Seguro automotivo com atendimento humano, assistência 24h e cotação sem burocracia.</p>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3.5h2V21h3.5v-6.5H16l.5-3.5h-3V9c0-.55.45-1 1-1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 10.5v6M8 7.8v.1M12 16.5v-3.7c0-1.2.9-2 2-2s2 .8 2 2v3.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#coberturas">Seguros</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">Política de privacidade</a></li>
+        <li><a href="#">Termos de uso</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__col--legal">
+      <h4>Vitta Auto Corretora de Seguros</h4>
+      <p>CNPJ 00.000.000/0001-00 (fictício)<br>SUSEP 00000000000 (fictício)</p>
+      <p>Empresa fictícia criada para fins de demonstração.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; 2026 Vitta Auto Seguros. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================== FLUTUANTES ===================== -->
+<a href="#" class="whatsapp-float" id="whatsapp-float" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18.1c-1.63 0-3.15-.46-4.44-1.25l-.32-.19-3.01.79.8-2.93-.2-.3A8.09 8.09 0 0 1 3.9 12c0-4.47 3.63-8.1 8.1-8.1s8.1 3.63 8.1 8.1-3.63 8.1-8.1 8.1Zm4.44-6.06c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>
+</a>
+
+<div class="mobile-cta" id="mobile-cta">
+  <a href="#cotacao">🚗 Calcular cotação</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
