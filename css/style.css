@@ -1326,7 +1326,10 @@ a.contact__value:hover {
 }
 
 .mobile-cta a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-align: center;
   background: var(--blue-accent);
   color: var(--white);
@@ -1335,6 +1338,12 @@ a.contact__value:hover {
   padding: 15px;
   border-radius: var(--radius-sm);
   box-shadow: 0 10px 22px rgba(46, 107, 255, 0.32);
+}
+
+.mobile-cta__icon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
 }
 
 /* ===================== 18. ANIMAÇÕES AUXILIARES ===================== */
